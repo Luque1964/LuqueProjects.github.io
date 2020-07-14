@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("file:///E:/Captura%20de%20pantalla%20(82).png");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    
+   
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Made it by Luque</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Abandoned Forest<br>Proyect</span>
+  
+    <p><a href="http://www.mediafire.com/file/q7fn772q8kyf1rj/Project_Forest.rar/file" class="w3-button w3-xxlarge w3-black">Download</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">More About The Creator</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="jhttps://discord.gg/aGJSbyk" onclick="openMenu(event, 'Discord');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Discord</div>
+      </a>
+      <a href="https://www.instagram.com/tgk_valladares/?hl=es" onclick="openMenu(event, 'Instagram');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Instagram</div>
+      </a>
+      <a href="https://www.paypal.me/Luque1964" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Paypal (For Support)</div>
+      </a>
+    </div>
+
+   
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
